@@ -1,111 +1,97 @@
-<h1 align=center>Nextjs + Tailwind CSS + TypeScript Starter and Boilerplate</h1>
+# 🥊 Trudo Boks Club Website
 
-<p align=center>Nextplate is a free starter template built with Nextjs, TailwindCSS & TypeScript, providing everything you need to jumpstart your Next project and save valuable time.</p>
+A professional website for **Trudo Boks Club**, a boxing sports club, developed using **Next.js** with the **Nextplate** template as a foundation. This project has been significantly customized to meet the needs of the club, featuring multilingual support, responsive design, and SEO optimization. The site will be deployed on **Netlify** with **EmailJS** handling form submissions, making it a fully serverless application.
 
-<p align=center>Made with ♥ by <a href="https://zeon.studio/">Zeon Studio</a></p>
-<p align=center>If you find this project useful, please give it a ⭐ to show your support. </p>
+## 🛠️ Technologies and Tools
 
-<h2 align="center"> <a target="_blank" href="https://zeon.studio/preview?project=nextplate" rel="nofollow">👀 Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-nextplate-netlify-app/zttnq0z42d?form_factor=desktop">Page Speed (100%)🚀</a>
-</h2>
+- **Next.js** — React framework with SSR (server-side rendering) and static generation.
+- **Nextplate** — a template for Next.js, serving as the base for this project.
+- **Netlify** — deployment platform for serverless hosting.
+- **EmailJS** — service for form submission handling without server logic.
+- **SEO Optimization** — enhanced visibility for search engines.
+- **Responsive Design** — supports multiple screen sizes and devices.
+- **Multilingual Support** — available in Dutch and French.
 
-<p align=center>
+## ✨ Key Features
 
-  <a href="https://github.com/vercel/next.js/releases/tag/v14.1.0" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=NEXTJS&message=14.1&color=000&logo=nextjs" />
-  </a>
+- **📝 Registration and Contact Forms** — allows users to easily sign up for the club or contact coaches.
+- **🌗 Theme Support** — light and dark theme toggle.
+- **🌐 Multilingual Interface** — Dutch and French language support.
+- **📱 Responsive Design** — optimized for desktop and mobile devices.
 
-  <a href="https://github.com/zeon-studio/nextplate/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/zeon-studio/nextplate" alt="license"></a>
+## 🔮 Future Enhancements
 
-  <img src="https://img.shields.io/github/languages/code-size/zeon-studio/nextplate" alt="code size">
+In the future, the site may be extended with:
+- 🔐 A full backend for user management, news, and events.
+- 🗓️ Event calendar and news feed.
+- 📲 Advanced social media integration.
+- ⚙️ Utilization of Netlify CMS for easier content management.
 
-  <a href="https://github.com/zeon-studio/nextplate/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/zeon-studio/nextplate" alt="contributors"></a>
-</p>
+## 🚀 Installation and Setup
 
-## 📌 Key Features
+To run the project locally, follow these steps:
 
-- 👥 Multi-Authors
-- 🎯 Similar Posts Suggestion
-- 🔍 Search Functionality
-- 🌑 Dark Mode
-- 🏷️ Tags & Categories
-- 🔗 Netlify setting pre-configured
-- 📞 Support contact form
-- 📱 Fully responsive
-- 📝 Write and update content in Markdown / MDX
-- 💬 Disqus Comment
-- 🔳 Syntax Highlighting
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/trudo-boks-club.git
+    ```
 
-### 📄 15+ Pre-designed Pages
+2. Navigate to the project directory:
+    ```bash
+    cd trudo-boks-club
+    ```
 
-- 🏠 Homepage
-- 👤 About
-- 📞 Contact
-- 👥 Authors
-- 👤 Author Single
-- 📝 Blog
-- 📝 Blog Single
-- 🚫 Custom 404
-- 💡 Elements
-- 📄 Privacy Policy
-- 🏷️ Tags
-- 🏷️ Tag Single
-- 🗂️ Categories
-- 🗂️ Category Single
-- 🔍 Search
+3. Install dependencies with Yarn:
+    ```bash
+    yarn install
+    ```
 
-## 🚀 Getting Started
+4. Start the local development server:
+    ```bash
+    yarn dev
+    ```
 
-### 📦 Dependencies
+The project will be available at [http://localhost:3000](http://localhost:3000).
 
-- next 14.1+
-- node v20.10+
-- npm v10.2+
-- tailwind v3.3+
+## 📸 Screenshots
 
-### 👉 Install Dependencies
+### 🖥️ Homepage (Desktop)
+![Desktop View - Light Theme](./public/images/screenshots/screen1.png)
+![Desktop View - Dark Theme](./public/images/screenshots/screen2.png)
 
-```bash
-npm install
+### ℹ️ About Us Section
+![About Us](./public/images/screenshots/screen3.png)
+
+### 📬 Contact and Registration Forms
+![Contact Form](./public/images/screenshots/screen4.png)
+
+### 📱 Mobile View (Dark and Light Themes)
+![Mobile View](./public/images/screenshots/screen6.png)
+
+## 🌍 Deployment on Netlify
+
+The project is configured for deployment on [Netlify](https://www.netlify.com/), allowing for a serverless structure with access to Netlify Forms and other built-in features.
+
+## 📧 Contact Forms with EmailJS
+
+The website uses **EmailJS** for handling form submissions, including the registration and contact forms, allowing submissions without a dedicated backend.
+
+## 🎬 Video
+
+To view a short intro video with the club’s logo:
+- **[YouTube Video](https://www.youtube.com/watch?v=7Q9r0WbYwF8)**
+
+Or view the video embedded directly on the site:
+
+```html
+<video width="320" height="240" controls>
+  <source src="./public/images/tbc-intro.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ```
+## 👤 Contact
 
-### 👉 Development Command
+**Developer:** Adam Gazdiev  
+**LinkedIn:** [Follow me on LinkedIn](https://www.linkedin.com/in/adam-gazdiev/)
 
-```bash
-npm run dev
-```
 
-### 👉 Build Command
-
-```bash
-npm run build
-```
-
-### 👉 Build and Run With Docker
-
-```bash
-docker build -t nextplate .
-docker run -p 3000:3000 nextplate
-```
-
-<!-- reporting issue -->
-
-## 🐞 Reporting Issues
-
-We use GitHub Issues as the official bug tracker for this Template. Please Search [existing issues](https://github.com/zeon-studio/nextplate/issues). It’s possible someone has already reported the same problem.
-If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/zeon-studio/nextplate/issues).
-
-<!-- licence -->
-
-## 📝 License
-
-Copyright (c) 2023 - Present, Designed & Developed by [Zeon Studio](https://zeon.studio/)
-
-**Code License:** Released under the [MIT](https://github.comzeon-studio/nextplate/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
-
-## 💻 Need Custom Development Services?
-
-If you need a custom theme, theme customization, or complete website development services from scratch you can [Hire Us](https://zeon.studio/).

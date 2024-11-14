@@ -57,3 +57,10 @@ code {
 blockquote > p {
   @apply my-0 #{!important};
 }
+#schedule::before {
+  content: "";
+  display: block;
+  height: 250px;
+  margin-top: -80px;
+  visibility: hidden;
+}

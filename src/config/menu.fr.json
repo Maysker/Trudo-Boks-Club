@@ -1,56 +1,25 @@
 {
   "main": [
     {
-      "name": "Maison",
+      "name": "Accueil",
       "url": "/"
     },
     {
-      "name": "Propos",
+      "name": "À propos",
       "url": "/about"
     },
     {
-      "name": "éléments",
-      "url": "/elements"
+      "name": "Entraînements",
+      "url": "#schedule"
     },
     {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Contact",
-          "url": "/contact"
-        },
-        {
-          "name": "Blog",
-          "url": "/blog"
-        },
-        {
-          "name": "Auteures",
-          "url": "/authors"
-        },
-        {
-          "name": "Catégories",
-          "url": "/categories"
-        },
-        {
-          "name": "Mots-clés",
-          "url": "/tags"
-        },
-        {
-          "name": "Page 404",
-          "url": "/404"
-        }
-      ]
+      "name": "Contact",
+      "url": "/contact"
     }
   ],
   "footer": [
     {
-      "name": "Éléments",
-      "url": "/elements"
-    },
-    {
-      "name": "Privacy Policy",
+      "name": "Politique de confidentialité",
       "url": "/privacy-policy"
     }
   ]

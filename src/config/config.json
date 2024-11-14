@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Nextplate",
-    "base_url": "https://nextplate.netlify.app",
+    "title": "Trudo Boks Club",
+    "base_url": "https://trudoboks.be",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "150",
     "logo_height": "27",
-    "logo_text": "Nextplate"
+    "logo_text": "Trudo Boks Club"
   },
 
   "settings": {
@@ -27,24 +27,24 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "Developed by [Adam Gazdiev](https://gazdiev.dev)"
   },
 
   "navigation_button": {
-    "enable": true,
+    "enable": false,
     "label": "Get Started",
-    "link": "https://github.com/zeon-studio/nextplate"
+    "link": "https://github.com/Maysker"
   },
 
   "disqus": {
     "enable": true,
-    "shortname": "themefisher-template",
+    "shortname": "Trudo Boks Club",
     "settings": {}
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "Adam Gazdiev",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Next Boilerplate"
+    "meta_description": "Tdudo Boks Club"
   }
 }

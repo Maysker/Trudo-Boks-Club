@@ -1,9 +1,9 @@
 ---
-title: "Hey, I am John Doe!"
+title: "Hallo, ik ben Patrick Coppesmette!"
 meta_title: "About"
 description: "this is meta description"
 image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Met meer dan 20 jaar ervaring in de bokswereld ben ik hier om jou te begeleiden op je pad naar kracht en zelfvertrouwen. Of je nu een beginner bent of een ervaren bokser, bij ons ontwikkel je niet alleen je fysieke kracht, maar ook je mentale weerbaarheid. Laten we samen werken aan jouw doelen en grenzen verleggen.

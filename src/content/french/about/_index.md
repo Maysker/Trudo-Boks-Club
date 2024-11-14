@@ -1,9 +1,9 @@
 ---
-title: "Hé, je suis John Doe !"
-meta_title: "About"
-description: "this is meta description"
+title: "Bonjour, je suis Patrick Coppesmette !"
+meta_title: "À propos"
+description: "Ceci est une méta description"
 image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Avec plus de 20 ans d'expérience dans le monde de la boxe, je suis ici pour vous guider sur votre chemin vers la force et la confiance en vous. Que vous soyez débutant ou boxeur expérimenté, chez nous, vous développerez non seulement votre force physique, mais aussi votre résilience mentale. Travaillons ensemble pour atteindre vos objectifs et repousser vos limites.

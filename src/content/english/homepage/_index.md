@@ -1,53 +1,41 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Next Project"
-  content: "Nextplate is a free starter template built with Next and TailwindCSS, providing everything you need to jumpstart your Next project and save valuable time."
+  title: "TRUDO BOKS CLUB"
+  content: "Echte kracht zit niet in de spieren, maar in de wil. Train elke dag alsof het de beslissende is, en onthoud: door jezelf te overwinnen, kom je dichter bij de overwinning, waar de ring zich ook bevindt."
   image: "/images/banner.png"
   button:
-    enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/nextplate"
+    enable: false
+    label: "Meld je aan"
+    link: "/elements"
 
 # Features
 features:
-  - title: "What's Included in Nextplate"
+  - title: "Boks Training"
     image: "/images/service-1.png"
-    content: "Nextplate is a comprehensive starter template that includes everything you need to get started with your Next project. What's Included in Nextplate"
+    content: "Adres: Olympialaan 12, 3800 Sint-Truiden"
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Next and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Next"
-    image: "/images/service-2.png"
-    content: "Next is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Dinsdag: van 19:00 tot 21:00"
+      - "Donderdag: van 19:00 tot 21:00"
+      - "Zondag: van 10:00 tot 12:00"
+      
+     
     button:
       enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/nextplate"
+      label: "Meld je aan"
+      link: "/elements"
 
-  - title: "The Top Reasons to Choose Next for Your Next Project"
-    image: "/images/service-3.png"
-    content: "With Next, you can build modern and content-focused websites without sacrificing performance or ease of use."
+  - title: "Inspiratie en Kracht bij Trudo Boks Club"
+    image: "/images/service-2.png"
+    content: "Elke training en elke wedstrijd is niet alleen een strijd met de tegenstander, maar ook een overwinning op jezelf. Onze sporters streven naar perfectie, versterken hun karakter en wilskracht op weg naar hun doelen. Trudo Boks Club is de plek waar kampioenen worden gemaakt.Belangrijke punten:"
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Next a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Ontwikkeling van kracht en uithoudingsvermogen: Versterken van de fysieke en mentale weerbaarheid van elke sporter."
+      - "Overwinningen in de ring en daarbuiten: Trots op de prestaties van de club op lokale en internationale podia."
+      - "Vriendschappelijke sfeer en professionele trainers: Ondersteuning en begeleiding op elke stap van het pad."
     button:
       enable: false
-      label: ""
-      link: ""
+      label: "Meld je aan"
+      link: "/elements"
+
+  
 ---

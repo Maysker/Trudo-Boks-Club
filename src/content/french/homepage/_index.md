@@ -1,53 +1,40 @@
 ---
-# Banner
+# Bannière
 banner:
-  title: "Le modèle de démarrage ultime dont vous avez besoin pour démarrer votre prochain projet"
-  content: "Nextplate est un modèle de démarrage gratuit construit avec Next et TailwindCSS, fournissant tout ce dont vous avez besoin pour démarrer votre projet Next et gagner un temps précieux."
+  title: "TRUDO BOKS CLUB"
+  content: "La vraie force ne réside pas dans les muscles, mais dans la volonté. Entraîne-toi chaque jour comme si c'était le jour décisif, et souviens-toi : en te surpassant, tu te rapproches de la victoire, où que le ring se trouve."
   image: "/images/banner.png"
   button:
-    enable: true
-    label: "Commencez gratuitement"
-    link: "https://github.com/zeon-studio/nextplate"
+    enable: false
+    label: "Inscrivez-vous"
+    link: "/elements"
 
-# Features
+# Caractéristiques
 features:
-  - title: "Ce qui est inclus dans Nextplate"
+  - title: "Entraînement de Boxe"
     image: "/images/service-1.png"
-    content: "Nextplate est un modèle de démarrage complet qui comprend tout ce dont vous avez besoin pour démarrer votre projet Next. Ce qui est inclus dans Nextplate"
+    content: "Adresse : Olympialaan 12, 3800 Sint-Truiden"
     bulletpoints:
-      - "10+ pages pré-construites"
-      - "95+ Score de vitesse de page Google"
-      - "Construisez avec Next et TailwindCSS pour un style simple et personnalisable"
-      - "Entièrement réactif sur tous les appareils"
-      - "Optimisé pour le référencement pour un meilleur classement dans les moteurs de recherche"
-      - "**Open-source et gratuit** pour un usage personnel et commercial"
-    button:
-      enable: false
-      label: "Commencez maintenant"
-      link: "#"
-
-  - title: "Discover the Key Features Of Next"
-    image: "/images/service-2.png"
-    content: "Next is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Mardi : de 19h00 à 21h00"
+      - "Jeudi : de 19h00 à 21h00"
+      - "Dimanche : de 10h00 à 12h00"
+      
     button:
       enable: true
-      label: "Commencez maintenant"
-      link: "https://github.com/zeon-studio/nextplate"
+      label: "Inscrivez-vous"
+      link: "/elements"
 
-  - title: "Les principales raisons de choisir Next pour votre prochain projet"
-    image: "/images/service-3.png"
-    content: "Avec Next, vous pouvez créer des sites Web modernes et axés sur le contenu sans sacrifier les performances ou la facilité d'utilisation."
+  - title: "Inspiration et Force au Trudo Boks Club"
+    image: "/images/service-2.png"
+    content: "Chaque entraînement et chaque combat ne sont pas seulement des confrontations avec l'adversaire, mais aussi des victoires sur soi-même. Nos athlètes visent la perfection, renforcent leur caractère et leur volonté pour atteindre leurs objectifs. Le Trudo Boks Club est l'endroit où se forgent les champions. Points clés :"
     bulletpoints:
-      - "Chargez instantanément des sites statiques pour une meilleure expérience utilisateur et un meilleur référencement."
-      - "La syntaxe intuitive et la prise en charge des frameworks populaires facilitent l'apprentissage et l'utilisation de Next."
-      - "Utilisez n’importe quelle bibliothèque ou framework front-end, ou créez des composants personnalisés, pour n’importe quelle taille de projet."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Développement de la force et de l'endurance : Renforcement de la résilience physique et mentale de chaque sportif."
+      - "Victoire sur le ring et au-delà : Fierté des performances du club sur les scènes locales et internationales."
+      - "Atmosphère conviviale et entraîneurs professionnels : Soutien et accompagnement à chaque étape du parcours."
     button:
       enable: false
-      label: ""
-      link: ""
+      label: "Inscrivez-vous"
+      link: "/elements"
+
+ 
 ---

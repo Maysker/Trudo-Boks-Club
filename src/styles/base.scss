@@ -64,3 +64,60 @@ blockquote > p {
   margin-top: -80px;
   visibility: hidden;
 }
+.scroll-indicator {
+  position: fixed;
+  bottom: 60px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  animation: fadeOut 5s ease forwards;
+
+  .mouse {
+    width: 32px; 
+    height: 52px; 
+    border: 2px solid #b5b5ba;
+    border-radius: 14px;
+    position: relative;
+  }
+
+  .scroll-wheel {
+    width: 6px; 
+    height: 12px; 
+    background-color: #b5b5ba;
+    border-radius: 4px;
+    position: absolute;
+    top: 12px; 
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.5s infinite;
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

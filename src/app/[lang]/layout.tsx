@@ -13,7 +13,7 @@ export default async function Layout({
   children: React.ReactNode;
   params: { lang: string };
 }) {
-  const menu = await getTranslations(params.lang);
+  const menu = await getTranslations(params.lang); // Асинхронный вызов (остается на сервере)
 
   return (
     <>

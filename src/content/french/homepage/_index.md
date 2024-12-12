@@ -12,6 +12,7 @@ banner:
 # Caractéristiques
 features:
   - title: "Entraînement de Boxe"
+    id: "schedule"
     image: "/images/service-1.png"
     content: "Adresse : Olympialaan 12, 3800 Sint-Truiden"
     bulletpoints:

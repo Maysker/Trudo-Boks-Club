@@ -91,7 +91,7 @@ const Home = ({ params }: { params: { lang: string } }) => {
       {features.map((feature, index: number) => (
   <section
     key={index}
-    id={feature.title === "Boks Training" ? "schedule" : undefined} // add id for "Boks Training"
+    id={feature.id}
     className={`section-sm ${index % 2 === 0 && "bg-gradient"}`}
   >
     <div className="container">

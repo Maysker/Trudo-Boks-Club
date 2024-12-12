@@ -2,12 +2,15 @@
 
 import React, { useState } from "react";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import config from "@/config/config.json";
 import PageHeader from "@/partials/PageHeader";
 import SeoMeta from "@/partials/SeoMeta";
 import emailjs from "@emailjs/browser";
+import translations from "@/i18n";
 
-const Contact = () => {
+const Contact = ({ params }: { params: { lang: string } }) => {
+  const lang = params.lang || "en";
+  const t = translations[lang] || translations.en;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -38,12 +41,12 @@ const Contact = () => {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
-          setStatus("Message sent successfully!");
+          setStatus(t.message_sent_success);
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
           console.error("FAILED...", error);
-          setStatus("An error occurred. Please try again.");
+          setStatus(t.message_sent_error);
         }
       );
   };
@@ -51,13 +54,12 @@ const Contact = () => {
   return (
     <>
       <SeoMeta
-        title="Contact"
-        meta_title="Contact Us"
-        description="Feel free to contact us using the form below."
-        image="/images/contact.jpg"
+        title={t.contact_title}
+        meta_title={t.contact_meta_title}
+        description={t.contact_description}
       />
-      <PageHeader title="Contact">
-        <Breadcrumbs lang="en" />
+      <PageHeader title={t.contact_title}>
+        <Breadcrumbs lang={lang} />
       </PageHeader>
       <section className="section-sm">
         <div className="container">
@@ -66,13 +68,13 @@ const Contact = () => {
               <form onSubmit={handleSubmit}>
                 <div className="mb-6">
                   <label htmlFor="name" className="form-label">
-                    Full Name <span className="text-red-500">*</span>
+                    {t.full_name} <span className="text-red-500">*</span>
                   </label>
                   <input
                     id="name"
                     name="name"
                     className="form-input"
-                    placeholder="Enter your full name"
+                    placeholder={t.full_name_placeholder}
                     type="text"
                     value={formData.name}
                     onChange={handleInputChange}
@@ -81,13 +83,13 @@ const Contact = () => {
                 </div>
                 <div className="mb-6">
                   <label htmlFor="email" className="form-label">
-                    Email <span className="text-red-500">*</span>
+                    {t.mail} <span className="text-red-500">*</span>
                   </label>
                   <input
                     id="email"
                     name="email"
                     className="form-input"
-                    placeholder="Enter your email"
+                    placeholder={t.mail_placeholder}
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
@@ -96,13 +98,13 @@ const Contact = () => {
                 </div>
                 <div className="mb-6">
                   <label htmlFor="message" className="form-label">
-                    Message <span className="text-red-500">*</span>
+                    {t.message} <span className="text-red-500">*</span>
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     className="form-input"
-                    placeholder="Enter your message"
+                    placeholder={t.message_placeholder}
                     rows={8}
                     value={formData.message}
                     onChange={handleInputChange}
@@ -110,7 +112,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">
-                  Submit
+                  {t.submit}
                 </button>
               </form>
               {status && <p className="mt-4 text-center">{status}</p>}

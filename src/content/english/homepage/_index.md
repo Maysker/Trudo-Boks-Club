@@ -12,6 +12,7 @@ banner:
 # Features
 features:
   - title: "Boks Training"
+    id: "schedule"
     image: "/images/service-1.png"
     content: "Adres: Olympialaan 12, 3800 Sint-Truiden"
     bulletpoints:

@@ -20,7 +20,7 @@ export default function RootLayout({
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
 
-        {/* Фавикон */}
+        {/* Favicon*/}
         <link rel="shortcut icon" href={config.site.favicon} />
         {/* Meta tags for the topic */}
         <meta name="theme-name" content="Trudo Boks Club" />

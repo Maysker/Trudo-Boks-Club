@@ -18,32 +18,25 @@ const nextConfig = {
   trailingSlash: config.site.trailing_slash,
   output: "standalone",
   async rewrites() {
-    if (config.settings.default_language_in_subdir) {
-      return [];
-    }
-
-    return activeLanguages.length !== 1
-      ? [
-          {
-            source: `/:lang(!${defaultLanguage}|${otherLanguages.join("|")})/:path*`,
-            destination: `/:lang/:path*`,
-          },
-          {
-            source: `/:path*`,
-            destination: `/${defaultLanguage}/:path*`,
-          },
-        ]
-      : [
-          {
-            source: `/${defaultLanguage}/:path*`,
-            destination: `/${defaultLanguage}/:path*`,
-          },
-          {
-            source: "/:path*",
-            destination: `/${defaultLanguage}/:path*`,
-          },
-        ];
-  },
+    const rewrites = [];
+  
+    // Handling languages ​​other than the default language
+    otherLanguages.forEach((lang) => {
+      rewrites.push({
+        source: `/${lang}/:path*`, // Prefixes for other languages
+        destination: `/${lang}/:path*`,
+      });
+    });
+  
+    // Handle default language (no prefix)
+    rewrites.push({
+      source: `/:path*`,
+      destination: `/${defaultLanguage}/:path*`,
+    });
+  
+    return rewrites;
+  }
+  
 };
 
 module.exports = nextConfig;

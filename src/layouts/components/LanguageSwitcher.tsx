@@ -1,3 +1,5 @@
+"use client";
+
 import languages from "@/config/language.json";
 import { getDefaultLanguage } from "@/lib/languageParser";
 import { slugSelector } from "@/lib/utils/slugSelector";
@@ -18,15 +20,11 @@ export default function LanguageSwitcher({
 
   const redirectedPathName = useCallback(
     (locale: string) => {
-      const hasLocale = languages.some((lang) => {
-        return pathname.includes(lang.languageCode);
-      });
-      const sliceNumber = hasLocale ? 2 : 1;
-      router.push(
-        slugSelector(locale, pathname.split("/").slice(sliceNumber).join("/")),
-      );
+      const currentPath = pathname.replace(/^\/(en|fr)/, "").replace(/^\/|\/$/g, ""); // Удаляем текущий язык
+      const newPath = slugSelector(locale, currentPath);
+      router.push(newPath);
     },
-    [pathname],
+    [pathname]
   );
 
   return (
@@ -35,9 +33,9 @@ export default function LanguageSwitcher({
       value={language}
       className={className}
       onChange={(e) => {
-        const language = e.target.value;
-        setLanguage(language);
-        redirectedPathName(language);
+        const newLang = e.target.value;
+        setLanguage(newLang);
+        redirectedPathName(newLang);
       }}
     >
       {languages.map((language) => (

@@ -1,7 +1,6 @@
 "use client";
 
-import languages from "@/config/language.json";
-import { getDefaultLanguage } from "@/lib/languageParser";
+import { getDefaultLanguage, getActiveLanguages } from "@/lib/languageParser";
 import { slugSelector } from "@/lib/utils/slugSelector";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useMemo, useState } from "react";
@@ -13,14 +12,15 @@ export default function LanguageSwitcher({
   className?: string;
   lang: string;
 }) {
-  const defaultLang = useMemo(getDefaultLanguage, []);
+  const defaultLang = useMemo(() => getDefaultLanguage(), []); // Get the default language
+  const activeLanguages = useMemo(() => getActiveLanguages(), []); // Get active languages
   const [language, setLanguage] = useState(lang);
   const router = useRouter();
   const pathname = usePathname();
 
   const redirectedPathName = useCallback(
     (locale: string) => {
-      const currentPath = pathname.replace(/^\/(en|fr)/, "").replace(/^\/|\/$/g, ""); // Удаляем текущий язык
+      const currentPath = pathname.replace(/^\/(en|fr)/, "").replace(/^\/|\/$/g, "");// Remove the current language
       const newPath = slugSelector(locale, currentPath);
       router.push(newPath);
     },
@@ -38,7 +38,7 @@ export default function LanguageSwitcher({
         redirectedPathName(newLang);
       }}
     >
-      {languages.map((language) => (
+      {activeLanguages.map((language) => (
         <option
           key={language.languageCode}
           id={language.languageCode}

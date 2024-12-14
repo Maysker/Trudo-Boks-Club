@@ -6,6 +6,8 @@
   "message": "Nog iets anders?",
   "message_placeholder": "Bericht hier invoeren...",
   "submit": "Versturen",
+  "success_message": "Bericht succesvol verzonden!",
+  "error_message": "Het verzenden van het bericht is mislukt. Probeer het opnieuw.",
   "read_more": "Lees meer",
   "categories": "Categorieën",
   "tags": "Tags",

@@ -6,6 +6,8 @@
   "message": "Quelque chose d'autre ?",
   "message_placeholder": "Message ici...",
   "submit": "Soumettre",
+  "success_message": "Message envoyé avec succès !",
+  "error_message": "Échec de l'envoi du message. Veuillez réessayer.",
   "read_more": "Lire la suite",
   "categories": "Catégories",
   "tags": "Étiquettes",

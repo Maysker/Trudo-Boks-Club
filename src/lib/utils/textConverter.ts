@@ -15,7 +15,12 @@ export const markdownify = (content: string, div?: boolean) => {
 };
 
 // humanize
-export const humanize = (content: string) => {
+export const humanize = (content?: string) => {
+  if (typeof content !== "string") {
+    console.error("Invalid content passed to humanize:", content);
+    return ""; 
+  }
+
   return content
     .replace(/^[\s_]+|[\s_]+$/g, "")
     .replace(/[_\s]+/g, " ")
@@ -23,6 +28,8 @@ export const humanize = (content: string) => {
       return m.toUpperCase();
     });
 };
+
+
 
 // titleify
 export const titleify = (content: string) => {

@@ -20,6 +20,15 @@ interface Translation {
   contact_title: string;
   contact_meta_title: string;
   contact_description: string;
+  form_title: string;
+  form_description: string;
+  age_label: string; 
+  age_placeholder: string;
+  phone_label: string; 
+  phone_placeholder: string;
+  name_label: string;
+  email_label: string;
+  message_label: string;
 }
 
 // Save the translations object with typing
@@ -46,14 +55,23 @@ const translations: Record<string, Translation> = {
     contact_title: "Contact",
     contact_meta_title: "Neem contact met ons op",
     contact_description: "Neem gerust contact met ons op via het onderstaande formulier.",
+    form_title: "Aanmeldingsformulier",
+    form_description: "Vul het onderstaande formulier in om je aan te melden.",
+    age_label: "Leeftijd", 
+    age_placeholder: "Vul je leeftijd in",
+    phone_label: "Telefoonnummer",
+    phone_placeholder: "Vul je telefoonnummer in",
+    name_label: "Naam",
+    email_label: "E-mail",
+    message_label: "Bericht of extra informatie",
   },
   fr: {
     full_name: "Nom complet",
     full_name_placeholder: "Entrez votre nom complet",
-    mail: "Courriel professionnel",
-    mail_placeholder: "john.doe@email.com",
+    mail: "Courriel",
+    mail_placeholder: "Entrez votre adresse email",
     message: "Quelque chose d'autre ?",
-    message_placeholder: "Message ici...",
+    message_placeholder: "Écrivez votre message ici...",
     submit: "Soumettre",
     read_more: "Lire la suite",
     categories: "Catégories",
@@ -62,14 +80,22 @@ const translations: Record<string, Translation> = {
     related_post: "Article connexe",
     page_not_found: "Page introuvable",
     page_not_found_content:
-      "La page que vous cherchez a peut-être été supprimée, renommée ou temporairement indisponible.",
+      "La page que vous cherchez a peut-être été supprimée, renommée ou est temporairement indisponible.",
     back_to_home: "Retour à l'accueil",
     message_sent_success: "Message envoyé avec succès!",
     message_sent_error: "Une erreur s'est produite. Veuillez réessayer.",
     contact_title: "Contact",
     contact_meta_title: "Contactez-nous",
-    contact_description:
-      "N’hésitez pas à nous contacter en utilisant le formulaire ci-dessous.",
+    contact_description: "N'hésitez pas à nous contacter via le formulaire ci-dessous.",
+    form_title: "Formulaire d'inscription",
+    form_description: "Veuillez remplir le formulaire ci-dessous pour vous inscrire.",
+    age_label: "Âge",
+    age_placeholder: "Entrez votre âge",
+    phone_label: "Numéro de téléphone",
+    phone_placeholder: "Entrez votre numéro de téléphone",
+    name_label: "Nom",
+    email_label: "E-mail",
+    message_label: "Message ou informations supplémentaires",
   },
 };
 

@@ -1,5 +1,5 @@
 ---
-title: "Bonjour, je suis Patrick Coppesmette !"
+title: "Bonjour, je suis Prénom Nom!"
 meta_title: "À propos"
 description: "Ceci est une méta description"
 image: "/images/avatar.png"

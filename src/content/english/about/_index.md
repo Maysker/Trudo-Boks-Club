@@ -1,5 +1,5 @@
 ---
-title: "Hallo, ik ben Patrick Coppesmette!"
+title: "Hallo, ik ben Voornaam Achternaam!"
 meta_title: "About"
 description: "this is meta description"
 image: "/images/avatar.png"
